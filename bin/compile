@@ -191,6 +191,8 @@ cd $p
 go get github.com/mattn/gom
 gom install
 gom build -v
+
+ls -la $GOBIN
 set -u
 
 if [ $? -ne 0 ] ; then

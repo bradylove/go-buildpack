@@ -190,6 +190,7 @@ unset GIT_DIR # unset git dir or it will mess with goinstall
 cd $p
 go get github.com/mattn/gom
 gom install
+gom build -v
 set -u
 
 if [ $? -ne 0 ] ; then

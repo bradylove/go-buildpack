@@ -5,9 +5,6 @@ url_to_dependency_map:
   - match: go(\d+\.\d+(.*))
     name: go
     version: $1
-  - match: godep
-    name: godep
-    version: v45
 
 dependencies:
   - name: go
@@ -40,13 +37,6 @@ dependencies:
     md5: 31717324cabc5f8c537deee00a5a2b3c
     cf_stacks:
       - cflinuxfs2
-  - name: godep
-    version: v45
-    uri: https://pivotal-buildpacks.s3.amazonaws.com/concourse-binaries/godep/godep-v45-linux-x64.tgz
-    md5: 19c70132297861371a83d583ba26548a
-    cf_stacks:
-      - cflinuxfs2
-
 
 exclude_files:
   - .git/
